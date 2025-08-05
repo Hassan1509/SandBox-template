@@ -154,6 +154,13 @@
      letter-spacing: 0%;
      color: #60697b;
  }
+ .more_details_p{
+     font-weight: 500;
+     font-size: 17px;
+     line-height: 28.9px;
+     letter-spacing: 0%;
+     color: #60697b;
+ }
 
  .tick-list {
      list-style: none;
@@ -186,7 +193,7 @@
      width: 147.28px;
      height: 52.89px;
  }
- #less{
+ .less{
     border: none;
      border-radius: 1000px;
      background-color: #e9eaf8;
@@ -288,7 +295,7 @@
      color: #9499a3;
  }
 
- .project {
+ #project {
      width: 169.64px;
      height: 58.89px;
      border: none;
@@ -458,9 +465,10 @@
  input {
      border: none;
      padding: 10px;
-     border-radius: 5px 0 0 5px;
+     border-radius: 5px;
      background-color: #3c3c3c;
      color: #ffffff;
+     font-size: 16px;
  }
 
  placeholder {
@@ -488,4 +496,6 @@
      background-color: #6a5acd;
      color: #ffffff;
      cursor: pointer;
+     font-size: 16px;
+     margin-bottom: 20px;
 }

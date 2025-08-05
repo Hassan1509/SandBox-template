@@ -9,54 +9,34 @@
     first_email.style.display = "none";
   });
 
-// const moreBtn = document.getElementById("moreBtn")
-// const more_details_p = document.getElementById("more_details_p")
-
-// moreBtn.addEventListener("click", ()=>{
-//     more_details_p.style.display = "flex"
-//     more_details_p.style.flexDirection = "column"
-//     moreBtn.style.display = "none"
-// })
-
-// const less_details= ()=>{
-//     let less = document.getElementById("more_details_p")
-//     less.style.display = "none"
-// }
-
-// const moreBtn1 = document.getElementById("moreBtn1")
-// const more_details_p1 = document.getElementById("more_details_p1")
-
-// moreBtn1.addEventListener("click", ()=>{
-//     more_details_p1.style.display = "flex"
-//     more_details_p1.style.flexDirection = "column"
-//     moreBtn1.style.display = "none"
-// })
-
-// const more_details = () =>{
-//     let more = document.getElementById("more_details_p")
-//     let moreBtn = document.getElementById("moreBtn")
-
-//     more.style.display = "flex"
-//     more.style.flexDirection = "column"
-//     moreBtn.style.display = "none"
-// }
-
-// const less_details = () =>{
-//     let less = document.getElementById("more_details_p")
-//     let more = document.getElementById("moreBtn")
-
-//     less.style.display = "none"
-//     more.style.display = "block"
-// }
-
 const more_details = document.querySelectorAll(".more_details");
+const lessButtons = document.querySelectorAll(".less")
 
 more_details.forEach((Btn,index) => {
  Btn.addEventListener("click", ()=>{
     document.getElementById(`${index}`).style.display = "flex"
     document.getElementById(`${index}`).style.flexDirection = "column"
+    document.querySelectorAll(".less")[index].style.display = "block";
+    Btn.style.display = "none"
  })
 })
+
+lessButtons.forEach((btn, index) => {
+    btn.addEventListener("click", function () {
+      document.querySelectorAll(".more_details_p")[index].style.display = "none";
+      document.querySelectorAll(".less")[index].style.display = "none";
+      document.querySelectorAll(".more_details")[index].style.display = "block";
+    });
+  });
+
+  const project = document.getElementById("project")
+  const startForm = document.getElementById("startForm")
+
+  project.addEventListener("click",()=>{
+    startForm.style.display = "flex" 
+    startForm.style.flexDirection = "column" 
+    project.style.display = "none"
+  })
 
 
 
