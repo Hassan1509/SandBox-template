@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SandBox | Top-Notch Support</title>
+    <title>Sandbox | Top-Notch Support</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap"
       rel="stylesheet"
@@ -77,13 +77,13 @@
             </ul>
             <br />
             <button id="moreBtn" class="more_details" onclick="more_details()">More Details</button>
-
+            
             <p id="0" class="more_details_p" class="paragraph" style="display: none">
             Cum sociis natoque penatibus et magnis dis parturient montes, <br />
             nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in,
             egestas <br />eget quam. Praesent commodo cursus magna risus varius.
             <br><br>
-            <button id="less" onclick="less_details()">Less Details</button>
+            <button class="less" onclick="less_details()">Less Details</button>
           </p>
           </div>
           
@@ -114,7 +114,7 @@
               Etiam porta euismod mollis natoque ornare.
             </li>
           </ul>
-          <br /><br />
+          <br />
           <button id="moreBtn1" class="more_details">More Details</button>
 
           <p id="1" class="more_details_p" class="paragraph" style="display: none">
@@ -122,7 +122,7 @@
             nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in,
             egestas <br />eget quam. Praesent commodo cursus magna risus varius.
             <br><br>
-            <button id="less" onclick="less_details()">Less Details</button>
+            <button class="less" onclick="less_details()">Less Details</button>
           </p>
         </div>
 
@@ -159,15 +159,15 @@
               Etiam porta euismod mollis natoque ornare.
             </li>
           </ul>
-          <br /><br />
+          <br />
           <button class="more_details">More Details</button>
 
           <p id="2" class="more_details_p" class="paragraph" style="display: none">
             Cum sociis natoque penatibus et magnis dis parturient montes, <br />
             nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in,
             egestas <br />eget quam. Praesent commodo cursus magna risus varius.
-            <br><br>`
-            <button id="less" onclick="less_details()">Less Details</button>
+            <br><br>
+            <button class="less" onclick="less_details()">Less Details</button>
           </p>
         </div>
       </div>
@@ -311,7 +311,19 @@
         </div>
       </div>
       <br /><br />
-      <button class="project">Start a Project</button>
+      <button id="project">Start a Project</button>
+      <br>
+      <form id="startForm" style="display: none;">
+        <input type="text" id="fname" placeholder="First Name" required autocomplete="name" />
+        <br>
+        <input type="text" id="lname" placeholder="Last Name" required autocomplete="name" />
+        <br>
+          <input type="email" id="email" placeholder="Your Email" required autocomplete="email" />
+          <br>
+          <input type="text" id="text" placeholder="Project Description" required autocomplete="off" />
+          <br>
+          <button class="submit" type="submit">Submit</button>
+      </form>
     </div>
 
     <div class="fifthcontainer" id="Blog">
@@ -594,9 +606,9 @@
           <button id="joinBtn">Join</button>
         </div>
         <form id="joinForm" style="display: none">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <input type="text" placeholder="Explanation" required />
+          <input type="text" id="name" placeholder="Your Name" required autocomplete="name" />
+          <input type="email" id="email" placeholder="Your Email" required autocomplete="email" />
+          <input type="text" id="text" placeholder="Explanation" required autocomplete="off" />
           <button class="submit" type="submit">Submit</button>
         </form>
       </div>
